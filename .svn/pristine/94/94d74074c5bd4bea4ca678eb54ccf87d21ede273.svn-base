@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E5DF943-F136-4D8D-938A-622DBC7C3944}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoletoElectronicoDesktop</RootNamespace>
+    <AssemblyName>BoletoElectronicoDesktop</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbmBeneficiarios\FormAbmBeneficiarioIngresodatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmBeneficiarios\FormAbmBeneficiarioIngresodatos.Designer.cs">
+      <DependentUpon>FormAbmBeneficiarioIngresodatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmBeneficiarios\FormAbmBeneficiariosSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmBeneficiarios\FormAbmBeneficiariosSeleccion.Designer.cs">
+      <DependentUpon>FormAbmBeneficiariosSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmClientes\FormAbmClientesIngresodatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmClientes\FormAbmClientesIngresodatos.Designer.cs">
+      <DependentUpon>FormAbmClientesIngresodatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmClientes\FormAbmClientesSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmClientes\FormAbmClientesSeleccion.Designer.cs">
+      <DependentUpon>FormAbmClientesSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmPost-Net\FormAltaPostnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmPost-Net\FormAltaPostnet.Designer.cs">
+      <DependentUpon>FormAltaPostnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmPost-Net\FormSeleccionPostnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmPost-Net\FormSeleccionPostnet.Designer.cs">
+      <DependentUpon>FormSeleccionPostnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\frmAltaRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\frmAltaRol.Designer.cs">
+      <DependentUpon>frmAltaRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\frmBuscadorRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\frmBuscadorRol.Designer.cs">
+      <DependentUpon>frmBuscadorRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\frmModificarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\frmModificarRol.Designer.cs">
+      <DependentUpon>frmModificarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmTarjetas\AltaTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmTarjetas\AltaTarjeta.Designer.cs">
+      <DependentUpon>AltaTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmTarjetas\BuscadorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmTarjetas\BuscadorCliente.Designer.cs">
+      <DependentUpon>BuscadorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmTarjetas\FiltroBusquedaTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmTarjetas\FiltroBusquedaTarjeta.Designer.cs">
+      <DependentUpon>FiltroBusquedaTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmTarjetas\ModificacionTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmTarjetas\ModificacionTarjeta.Designer.cs">
+      <DependentUpon>ModificacionTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\CargaCredito\FormCargaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmUsuario\CargaCredito\FormCargaCredito.designer.cs">
+      <DependentUpon>FormCargaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\FormModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmUsuario\FormModificarUsuario.Designer.cs">
+      <DependentUpon>FormModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\FrmAltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmUsuario\FrmAltaUsuario.Designer.cs">
+      <DependentUpon>FrmAltaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\FrmBuscadorUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmUsuario\FrmBuscadorUsuario.Designer.cs">
+      <DependentUpon>FrmBuscadorUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\frmModificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmUsuario\frmModificacion.Designer.cs">
+      <DependentUpon>frmModificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DalCliente.cs" />
+    <Compile Include="Datos\DalPostnet.cs" />
+    <Compile Include="Datos\DalBeneficiarios.cs" />
+    <Compile Include="Datos\DalCarga.cs" />
+    <Compile Include="Datos\DalGral.cs" />
+    <Compile Include="Datos\DalRol.cs" />
+    <Compile Include="Datos\DalRubros.cs" />
+    <Compile Include="Datos\DalTarjeta.cs" />
+    <Compile Include="Datos\DalUsuario.cs" />
+    <Compile Include="EfectuarCompra\FormEfectuarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EfectuarCompra\FormEfectuarCompra.Designer.cs">
+      <DependentUpon>FormEfectuarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encriptar.cs" />
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmRolSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmRolSeccion.Designer.cs">
+      <DependentUpon>frmRolSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Beneficiario.cs" />
+    <Compile Include="Model\Carga.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Direccion.cs" />
+    <Compile Include="Model\Funcionalidades.cs" />
+    <Compile Include="Model\Postnet.cs" />
+    <Compile Include="Model\Rol.cs" />
+    <Compile Include="Model\Rubro.cs" />
+    <Compile Include="Model\Tarjeta.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="PagoEmpresas\FormPagoEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoEmpresas\FormPagoEmpresas.Designer.cs">
+      <DependentUpon>FormPagoEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbmBeneficiarios\FormAbmBeneficiarioIngresodatos.resx">
+      <DependentUpon>FormAbmBeneficiarioIngresodatos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmBeneficiarios\FormAbmBeneficiariosSeleccion.resx">
+      <DependentUpon>FormAbmBeneficiariosSeleccion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmClientes\FormAbmClientesIngresodatos.resx">
+      <DependentUpon>FormAbmClientesIngresodatos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmClientes\FormAbmClientesSeleccion.resx">
+      <DependentUpon>FormAbmClientesSeleccion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmPost-Net\FormAltaPostnet.resx">
+      <DependentUpon>FormAltaPostnet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmPost-Net\FormSeleccionPostnet.resx">
+      <DependentUpon>FormSeleccionPostnet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\frmAltaRol.resx">
+      <DependentUpon>frmAltaRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\frmBuscadorRol.resx">
+      <DependentUpon>frmBuscadorRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\frmModificarRol.resx">
+      <DependentUpon>frmModificarRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmTarjetas\AltaTarjeta.resx">
+      <DependentUpon>AltaTarjeta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmTarjetas\BuscadorCliente.resx">
+      <DependentUpon>BuscadorCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmTarjetas\FiltroBusquedaTarjeta.resx">
+      <DependentUpon>FiltroBusquedaTarjeta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmTarjetas\ModificacionTarjeta.resx">
+      <DependentUpon>ModificacionTarjeta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmUsuario\CargaCredito\FormCargaCredito.resx">
+      <DependentUpon>FormCargaCredito.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmUsuario\FormModificarUsuario.resx">
+      <DependentUpon>FormModificarUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmUsuario\FrmAltaUsuario.resx">
+      <DependentUpon>FrmAltaUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmUsuario\FrmBuscadorUsuario.resx">
+      <DependentUpon>FrmBuscadorUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmUsuario\frmModificacion.resx">
+      <DependentUpon>frmModificacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EfectuarCompra\FormEfectuarCompra.resx">
+      <DependentUpon>FormEfectuarCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmRolSeccion.resx">
+      <DependentUpon>frmRolSeccion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoEmpresas\FormPagoEmpresas.resx">
+      <DependentUpon>FormPagoEmpresas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TarjetasPremium\FormTarjetasPremium.resx">
+      <DependentUpon>FormTarjetasPremium.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TarjetasPremium\FormTarjetasPremium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarjetasPremium\FormTarjetasPremium.Designer.cs">
+      <DependentUpon>FormTarjetasPremium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Utils\Validador.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\BoletoElectronicoDesktop.Datos.DalGral.datasource" />
+    <None Include="Resources\sube_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\subeIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

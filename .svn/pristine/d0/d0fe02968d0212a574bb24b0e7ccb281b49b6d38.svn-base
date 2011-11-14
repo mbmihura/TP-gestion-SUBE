@@ -1,0 +1,25 @@
+ToDo:
+
+- El nombre del archivo ZIP debe llamarse: TP2C2011 K3071 MOZILLA
+- Debe renombrarse la extensión a .zip123 porque Gmail lo rechaza sino.
+- Asegurarse que no pese más de 20 MB.
+- El cuerpo del mail debe contener lo siguiente:
+
+Grupo: Mozilla
+Curso: K3071
+Integrantes: Sanguinetti, Pedro	 - 130.813-0
+	     Mihura, Martín	 - 144.262-4
+	     Prestía, Luciano	 - 128.414-9
+	     Polli, María Elvina - 123.659-3
+
+- Estructura del archivo ZIP:
+* \
+ * Readme.txt
+ * Estrategia.pdf
+ * \src
+  * Solución completa con dos cosas: Carpeta llamada BoletoElectronicoDesktop con todos los archivos y BoletoElectronicoDesktop.sln
+ * \data
+  * Agregar solamente el script inicial, que se debe llamar script_creacion_incial.sql
+
+- Dentro de src hay que fijarse de no enviar archivos SVN, CVS u otros. Tampoco enviar ejecutables ni DLLs.
+- Limpiar la solución desde Visual Studio (Proyecto - Limpiar Solución) antes de enviarla.
